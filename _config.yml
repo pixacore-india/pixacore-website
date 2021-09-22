@@ -1,0 +1,18 @@
+# Site
+name: 'Pixacore'
+description: 'Pixacore Description'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ''
+
+# Syntax
+markdown: kramdown
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, node_modules]
+
+sass:
+  sass_dir: '_scss'
+
+plugins:
+  - jekyll-seo-tag

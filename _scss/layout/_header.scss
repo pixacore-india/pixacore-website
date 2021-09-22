@@ -1,0 +1,161 @@
+header {
+    width:100%;
+    background-color: $white;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    transition: all 0.4s ease-in-out 0s;
+    padding:34px 0;
+
+    @media (min-width:992px){
+        &.shrink {
+            padding:5px 0;
+
+            .logo {
+                width:185px;
+            }
+        }
+    }
+
+    @media (max-width:991px){
+        padding:20px 0;
+    }
+
+    .container {
+        display:flex;
+        align-items:baseline;
+
+        @media (max-width:991px){
+            align-items: center;
+        }
+    }
+
+    .logo {
+        width:256px;
+        transition: all 0.4s ease-in-out 0s;
+
+        @media (max-width:991px){
+            width:120px;
+        }
+    }
+
+    .primary-nav {
+        margin-left: auto;
+
+        nav {
+            display:block;
+
+            @media (max-width:991px){
+                width:100%;
+                height: calc(100% - 76px);
+                position:fixed;
+                top:76px;
+                right:-100%;
+                background:linear-gradient(138deg, #007abf 9%, #0056b7 78%);
+                padding:30px 25px;
+                overflow: auto;
+            }
+
+            &:before {
+                @media (max-width:991px){
+                    width:72px;
+                    height:545px;
+                    background:url('../../assets/images/can-and-string.png') no-repeat left -10px / 100%;
+                    content:"";
+                    position:absolute;
+                    top:0;
+                    right:10px;
+                }
+            }
+
+            ul {
+                width:100%;
+                float:left;
+                display: block;
+
+                li {
+                    float:left;
+                    display:block;
+                    font-size:18px;
+                    line-height:22px;
+                    color: $blue;
+                    font-family: $opensans;
+                    font-weight: 400;
+                    padding:0 40px 0 0;
+                    letter-spacing: -0.18px;
+
+                    @media (min-width:992px) and (max-width:1200px){
+                        padding-right:20px;
+                    }
+
+                    @media (max-width:991px){
+                        width:100%;
+                        padding:0;
+                    }
+
+                    &:last-child {
+                        padding-right:0;
+                    }
+
+                    a {
+                        display:block;
+                        text-decoration: none;
+                        color:$blue;
+
+                        @media (max-width:991px){ 
+                            color:$white;
+                        }
+                    }
+                }
+
+                @media (max-width:991px){
+                    &.secondary-nav-ul {
+                        position: relative;
+                        padding:20px 0;
+                        margin:0 0 20px;
+
+                        &:after {
+                            width:266px;
+                            height:1px;
+                            background-color: #c9c9c9;
+                            content:"";
+                            position:absolute;
+                            bottom:0;
+                            left:0;
+                        }
+
+                        li {
+                            font-size:20px;
+                            line-height:24px;
+                            padding:15px 0;
+                            font-weight: 700;
+                        }
+                    }
+
+                    &.primary-nav-ul {
+                        li {
+                            font-size:26px;
+                            line-height:30px;
+                            padding:15px 0;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hamburger-icon {
+        width:36px;
+        height:36px;
+        display:block;
+        background: url(../../assets/images/menu-icon.png) no-repeat left top / 100%;
+        text-decoration: none;
+        color:$white;
+
+        &.active {
+            background: url(../../assets/images/close-icon.png) no-repeat left top / 100%;
+        }
+    }
+}

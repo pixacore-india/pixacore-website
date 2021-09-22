@@ -1,0 +1,122 @@
+footer {
+    width:100%;
+    position: relative;
+    padding:55px 0;
+
+    @media (max-width:991px) {
+        padding:35px 0;
+    }
+
+    &:before {
+        width:100%;
+        height:10px;
+        background:linear-gradient(to bottom, #119edb, #006ae1);
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    .footer-logo {
+        max-width:256px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 25px;
+
+        @media (max-width:991px) {
+            max-width: 120px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .copyṟight-txt {
+        font-size:16px;
+        line-height:20px;
+        color:$body-color;
+        font-weight: 400;
+        font-family: $opensans;
+        display: block;
+        padding:0 0 15px;
+
+        @media (max-width:991px) {
+            font-size:11px;
+            line-height: 15px;
+            padding-bottom: 7px;
+        }
+    }
+
+    .footer-links {
+        width:100%;
+        float:left;
+        display: block;
+
+        li {
+            float:left;
+            display: block;
+            font-size:16px;
+            line-height:20px;
+            color:$body-color;
+            font-weight: 700;
+            font-family: $opensans;
+
+            @media (max-width:991px) {
+                font-size:11px;
+                line-height: 15px;
+            }
+
+            a {
+                text-decoration: underline;
+                color:$body-color;
+            }
+        }
+    }
+
+    .footer-icons {
+        float:right;
+        display: block;
+
+        li {
+            float:left;
+            display:block;
+            padding:0 14px;
+
+            @media (max-width:991px) {
+                padding:0 7px;
+            }
+
+            &:last-child {
+                padding-right:0;
+            }
+
+            a {
+                display:block;
+                text-decoration: none;
+                width:32px;
+                height:32px;
+
+                @media (max-width:991px) {
+                    width:16px;
+                    height:16px;
+                }
+
+                &.linkedin-icon {
+                    background: url('../../assets/images/linkedin-icon.png') no-repeat left top / 100%;
+                }
+
+                &.tweet-icon {
+                    background: url('../../assets/images/twitter-icon.png') no-repeat left top / 100%;
+                }
+
+                &.fb-icon {
+                    background: url('../../assets/images/fb-icon.png') no-repeat left top / 100%;
+                }
+
+                &.instagram-icon {
+                    background: url('../../assets/images/instagram-icon.png') no-repeat left top / 100%;
+                }
+            }
+        }
+    }
+
+}
+

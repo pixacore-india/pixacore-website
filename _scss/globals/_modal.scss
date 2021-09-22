@@ -1,0 +1,174 @@
+ .blm-modal{
+    .modal-dialog{
+        .right-col{
+            max-width: 650px;
+            padding:0;
+
+            @media (max-width:991px){
+                padding-left:0;
+                padding-right: 0;
+            }
+        }
+    }
+    .close-button a{
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        top: 0;
+        right: 0;
+        background:url('../../assets/images/close-icon-pink.png') no-repeat left top / 100%;
+    }
+}
+ .BLM-Modal{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 45px;
+
+    img{
+        max-width: 100%;
+    }
+
+}
+
+.message {
+        padding: 0 15px;
+        p{
+            font-size: 16px;
+            span{
+                font-weight: bold;
+                color: #2FA6DE;
+            }
+        }
+    }
+    .focus-message{
+        font-size: 24px;
+        margin: 20px 15px;
+        padding: 5px 20px;
+        background-color: black;
+        color: white;
+        width: auto;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .footer-content {
+        font-size: 14px;
+        padding: 0 15px;
+        line-height: 19px;
+        margin-left: 15px;
+        border-left: 1px solid #2FA6DE;
+        #footer-content-span1{
+            font-weight: bold;
+            color: #2FA6DE;
+        }
+        #footer-content-span2{
+            font-weight: bold;
+        }
+        
+    }
+.WhitePaperModal{
+    padding: 45px;
+    padding-right: 90px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: normal;
+ .form-content{
+        .Acknowledge-content{
+            margin-top: 230px;
+        } 
+    }
+    .form-control{
+        margin-top: 10px;
+        width: 96% ;
+        border-radius: 0px;
+        line-height: 2;
+    }
+    small{
+        font-size: 12px;
+    }
+    .btn{
+        margin-top: 10px;
+        border-radius: 0px;
+        line-height: 2;
+        width: 96%;
+    }
+ }
+    .main-content{
+        font-size: 20px;
+        line-height: normal;
+        span{
+            font-weight: bold;
+        }
+    }
+    .middle-content{
+        font-size: 16px;
+        padding: 10px 0;
+        line-height: normal;
+    }
+   
+
+#whitePaperModal{
+    .modal-dialog{
+        max-width: 800px;
+    }
+
+    .close-button a{
+        position: absolute;
+        border-radius: 50%;
+        border: 10px solid red;
+        width: 35px;
+        height: 35px;
+        margin: 20px;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (max-width:991px) {
+    .BLM-Modal{
+        padding: 45px 20px;
+    .focus-message  {
+        font-size: 20px;
+        padding:5px 10px;
+     } 
+    }
+
+    .WhitePaperModal{
+        padding: 45px 20px;
+        .form-control{
+            width: 100% ;
+        }
+        .btn{
+            width: 100%;
+        }
+     }
+}
+
+.reel-modal {
+    .modal-dialog {
+        max-width: 640px;
+    }
+
+    .reel-modal-container {
+        padding-bottom:57.25%;
+
+        iframe {
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    }
+
+    .close-button a{
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        top: -30px;
+        right: -30px;
+        background:url('../../assets/images/close-icon-pink.png') no-repeat left top / 100%;
+    }
+}
